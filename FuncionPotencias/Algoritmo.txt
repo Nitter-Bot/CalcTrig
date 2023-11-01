@@ -1,1 +1,17 @@
-
+Entrada
+  ->Numeros reales
+Salida
+  ->Potencia x de ese numero
+Restricciones
+  ->Solo potencias enteras
+Algoritmo
+  Inicio
+    Solicitar numero y potencia elevada
+    Si la potencia es igual a cero
+      Entonces regresar 1
+    Si no, si la potencia es positiva
+      Entonces, multiplicar el numero las mismas veces que la potencia menos 1
+    Si no 
+      Entonces, realizar la potencias mormal, pero regresarla dividiendo a 1
+    Regresar la potencia
+Fin
