@@ -1,0 +1,13 @@
+Entrada
+  ->Numero
+Salida
+  ->Factorial
+Restricciones
+  ->Enteros
+Algoritmo
+  ->Ingresar numero y guardar
+    Si numero es mayor a 1
+      Guardar numero como principal, restar 1 y multilpicar por principal
+    Si numero es igual a 1
+      Regresar el principal
+    Si numero igual a 0 pedir otro numero
