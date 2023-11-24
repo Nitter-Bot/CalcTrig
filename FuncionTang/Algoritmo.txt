@@ -1,0 +1,24 @@
+Algoritmo función tangente
+
+Analisis del problema
+
+Entrada:
+
+-El numero del angulo a obtener
+
+Salida:
+
+-El valor del ángulo tangente
+
+Restricciones:
+
+- Ingresar el valor en reales
+- EL valor de coseno debe ser distinto de 0
+
+Algoritmo
+
+1.-Ingrese el valor de la tangente
+2.-Se crea una varaible "a" pa
+3.-Se llama a la función seno y 
+
+
