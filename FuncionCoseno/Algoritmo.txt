@@ -8,4 +8,5 @@ Restricciones
 
 Algoritmo
  Inicio
-  1. Solicitar número de x 
+  1. Solicitar ángulo y guardar en x
+  2. Mientras la serie 
