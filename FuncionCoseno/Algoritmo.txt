@@ -1,1 +1,11 @@
+Entradas
+-> Un número real x
+Salidas
+-> El coseno del número real x
+Restricciones
+-> Debe tener una precición de 1x10^-6
+-> Debe dar directo el cosenos de los ángulos notables.
 
+Algoritmo
+ Inicio
+  1. Solicitar número de x 
