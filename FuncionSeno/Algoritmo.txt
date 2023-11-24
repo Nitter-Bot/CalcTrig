@@ -11,7 +11,7 @@ Algoritmo
  -> Definir  como variable
  -> Mientras la diferencia de la serie y el nuevo termino sea menor o igual a 0.0001
     -> Hacer operacion (-1)^n, guardar en a
-    -> Hacer peracion 2*n factorial, guardar en b
+    -> Hacer peracion 2*n+1 factorial, guardar en b
     -> Hacer operacion (x)^2*n+1, guardar en c
     -> Hacer operacion a/b y guardar en d  
     -> Hacer operacion d*c y guardar en sen1
