@@ -1,1 +1,19 @@
-
+Entrada
+ -> Un angulo 
+Salida
+ > El seno del angulo
+Restricciones
+ -> (x%180==0) arrojen 0
+ -> 90 grados arroja  como resultado 1
+ -> 270 grados arroja como resultado -1
+Algoritmo
+ -> Solicitar angulo, guardar en x
+ -> Definir  como variable
+ -> Mientras la diferencia de la serie y el nuevo termino sea menor o igual a 0.0001
+    -> Hacer operacion (-1)^n, guardar en a
+    -> Hacer peracion 2*n factorial, guardar en b
+    -> Hacer operacion (x)^2*n+1, guardar en c
+    -> Hacer operacion a/b y guardar en d  
+    -> Hacer operacion d*c y guardar en sen1
+    -> Sen es igual a sen + sen1
+    -> A n se le suma 1
