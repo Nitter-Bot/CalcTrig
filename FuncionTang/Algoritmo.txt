@@ -17,8 +17,16 @@ Restricciones:
 
 Algoritmo
 
+INICIO
+
 1.-Ingrese el valor de la tangente
-2.-Se crea una varaible "a" pa
-3.-Se llama a la función seno y 
+2.-Se crea una varaible "a" , "b" y "c"
+3.-Se llama la función seno y se iguala a la variable "a"
+4.-Se llama la función coseno y se iguala a la varible "b" 
+  4.1.- Si b = 0 entonces mandar mensaje de "Error"
+  4.2.- Sino realizar "c =  a/b"
+5.-Se muestra por pantalla el resultado de la tangente.
+
+FIN
 
 
