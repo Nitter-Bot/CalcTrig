@@ -13,4 +13,6 @@ Algoritmo
   3. Crear la función calcularFactorial para calcular el facotorial de los términos empezando con n=1
   4. Crear la función calcularCoseno para calcular el coseno
     4.1 Mientras la diferencia de la serie sea menor o igual a una precisión de 0.0001
-     4.1.1
+     4.1.1 Realizar la serie de Taylor 1-((x^2)/2!)+((x^4)/4!)-((x^6)/6!)+((x^8)/8!)...((-1)^n)*((x^2n)/(2n)!)
+     4.1.2 Si el resultado es par entonces es positivo
+     4.1.2 Si no, el resultado es negativo
