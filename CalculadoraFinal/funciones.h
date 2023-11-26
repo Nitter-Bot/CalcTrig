@@ -1,6 +1,8 @@
 #include<stdio.h>
-//Prototipo
+//Prototipo por orden
 float potencia(float x,float y);
+
+float factorial(int num);
 //Potencias
 float potencia(float x,float y)
 {
@@ -30,7 +32,17 @@ float potencia(float x,float y)
 //Raiz
 
 //Factorial
-
+float factorial(int num)
+{
+	float principal=1;
+	principal=num;
+	while(num>1)
+	{
+		num--;
+		principal*=num;
+	}
+	return principal;
+}
 //Seno
 
 //Coseno
