@@ -1,24 +1,35 @@
+Función tangente
+
 Entrada:
-  -El numero del angulo a obtener
+  -El valor del ángulo a obtener
 
 Salida:
-  -El valor del ángulo tangente
+  -El resultado de la tangente del ángulo
 
 Restricciones:
   - Ingresar el valor en reales
   - EL valor de coseno debe ser distinto de 0
+  - Expresado en grados
 
 Algoritmo
 
 INICIO
 
-  1.-Ingrese el valor de la tangente
-  2.-Se crea una varaible "a" , "b" y "c"
-  3.-Se llama la función seno y se iguala a la variable "a"
-  4.-Se llama la función coseno y se iguala a la varible "b" 
-    4.1.- Si b = 0 entonces mandar mensaje de "Error"
-    4.2.- Sino realizar "c =  a/b"
-  5.-Se muestra por pantalla el resultado de la tangente.
+1.- Se crean las siguientes variables: "x", "s", "c" y "t" como reales
+2.- Mientras que el valor de cos(x) sea igual a cero hacer
+3.- Solicitar el valor del ángulo en grados
+4.- Guardar el dato en la variable x: "x = ángulo_ingresasado"
+5.- LLamar a la función seno
+6.- Realizar sen(x) y guardar el valor en "s": "s = sen(x)"
+7.- Llamar a la función coseno
+8.- Realizar cos(x) y guardar el valor en "c": "c = cos (x)"
+9.-Si cos(x) es igual a 0
+  9.01.-Mostrar por pantalla "Como vas a dividir entre 0 mi perro? JAJJA re noob. Ya deja el foco pinche cricoso :v"
+9.1.-sino
+  9.11.-No hacer ni verga
+10.-Fin del mientras
+11.-Realizar tangente: "t = s / c"
+12.-Mostrar por pantalla el resultado de la tangente
 
 FIN
 
