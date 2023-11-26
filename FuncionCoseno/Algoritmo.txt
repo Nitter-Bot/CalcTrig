@@ -16,3 +16,4 @@ Algoritmo
      4.1.1 Realizar la serie de Taylor 1-((x^2)/2!)+((x^4)/4!)-((x^6)/6!)+((x^8)/8!)...((-1)^n)*((x^2n)/(2n)!)
      4.1.2 Si el resultado es par entonces es positivo
      4.1.2 Si no, el resultado es negativo
+  5. Imprimir el resultado del coseno(x)
