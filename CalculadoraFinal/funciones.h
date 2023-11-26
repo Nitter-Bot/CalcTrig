@@ -1,7 +1,8 @@
 #include<stdio.h>
 //Prototipo por orden
 float potencia(float x,float y);
-
+double valorAbsoluto(double numero);
+double raizCuadrada(int numero);
 float factorial(int num);
 //Potencias
 float potencia(float x,float y)
@@ -29,8 +30,27 @@ float potencia(float x,float y)
 		}
 	}
 }
+//Valor absoluto
+double valorAbsoluto(double numero)
+{
+	if (numero < 0){return numero * -1;}
+	return numero;
+}
 //Raiz
-
+double raizCuadrada(int numero)
+{
+	double margen = 0.000001;
+	double estimacion = 1.0;
+	// Mientras haya una diferencia notable.
+	// Es decir, que el cuadrado de nuestra estimación difiera mucho del número
+	while (valorAbsoluto((estimacion * estimacion) - numero) >= margen)
+	{
+		double cociente = numero / estimacion;
+		double promedio = (cociente + estimacion) / 2.0;
+		estimacion = promedio;
+	}
+	return estimacion;
+}
 //Factorial
 float factorial(int num)
 {
