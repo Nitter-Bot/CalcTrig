@@ -1,0 +1,46 @@
+Proceso Coseno
+    Definir angulo, anguloRadianes, resultado, termino como Real
+    Definir n como Entero
+
+    Funcion convertirARadianes(grados Como Real) Como Real
+        Retornar grados * (3.1416 / 180.0)
+    FinFuncion
+
+    Funcion calcularFactorial(n Como Entero) Como Real
+        Definir i como Entero
+        Definir factorial como Real
+        factorial = 1.0
+
+        Para i = 1 Hasta n
+            factorial = factorial * i
+        FinPara
+
+        Retornar factorial
+    FinFuncion
+
+    Funcion calcularCoseno(x Como Real) Como Real
+        Definir resultado, termino como Real
+        Definir n como Entero
+        resultado = 1.0
+        termino = 1.0
+        n = 1
+
+        Mientras termino > 0.0001 O termino < -0.0001
+            termino = (termino * x * x) / (2 * n * (2 * n - 1))
+            Si n MOD 2 = 0
+                resultado = resultado + termino
+            Sino
+                resultado = resultado - termino
+            FinSi
+            n = n + 1
+        FinMientras
+
+        Retornar resultado
+    FinFuncion
+
+    Escribir("Ingresa el ángulo en grados: ")
+    Leer angulo
+    anguloRadianes = convertirARadianes(angulo)
+    resultado = calcularCoseno(anguloRadianes)
+    Escribir("El coseno de ", angulo, " grados es aproximadamente: ", resultado)
+FinProceso
