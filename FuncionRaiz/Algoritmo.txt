@@ -1,1 +1,18 @@
-Funcion raiz
+Entrada
+->Numero 
+Salida
+->Raiz
+Restricciones
+->Hasta cuatro numeros
+Algoritmo
+  Inicio
+    Solicitar numero y guardarlo
+    Var secundaria asignar numero
+    Mientras sea Falso
+      Si b=x/b
+        Entonces regresar Verdadero
+      Si no 
+        b=(1/2)(x/b +b)
+    Fin del mientras
+    Regresar b como raiz
+  Fin
