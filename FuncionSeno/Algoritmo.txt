@@ -15,5 +15,5 @@ Algoritmo
     -> Hacer operacion (x)^2*n+1, guardar en c
     -> Hacer operacion a/b y guardar en d  
     -> Hacer operacion d*c y guardar en sen1
-    -> Sen es igual a sen + sen1
+    -> Sen es igual a sen0 + sen1
     -> A n se le suma 1
