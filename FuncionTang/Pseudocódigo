@@ -1,1 +1,27 @@
+Definir t,s,c,x,z Como Real
+	
+	Mientras c es igual que 0 hacer 
+
+	Escribir "Ingrese el valor del angulo a calcular"
+	
+	leer x
+	
+	z = (x * (PI/180) ) //Se debe convertir a radianes para que la operación salga correcta 
+	s = sen(z)
+	//Escribir "Valor de seno:" s
+	c = cos(z)
+	//Escribir "Valor de coseno:" c
+	Si c  es igual que 0 Entonces
+		Escribir "Como vas a dividir entre 0 mi perro? Ya deja el foco pinche cricoso :v"
+	SiNo
+		
+	Fin Si
+	
+	FinMientras
+
+	t = (s / c)
+
+	Escribir "El valor de la tangente para el ángulo ingresado es: " t 
+	
+FinAlgoritmo
 
