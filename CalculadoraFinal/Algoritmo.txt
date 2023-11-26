@@ -1,1 +1,20 @@
+Entrada
+  ->Una expresion matematica que incluya funciones trigonometricas
+Salida
+  ->Un documento con todas las operaciones realizadas 
+  ->El valor de la expresion resuelta
+Restricciones
+  ->Solo se permiten ingresar numeros
 
+Algoritmo
+  Inicio
+    Mostrar en pantalla las operaciones a realizar
+    Solicitar la operacion que desea realizar
+    Ingresar los datos necesario de la operación
+    Efectura la operación
+    Mostrar el resultado, guardarlo en una variable temporal
+    Escribir el resultado en un txt
+    Preguntar si se desea repetir el proceso
+      Si, repetir todos los pasos
+      No, darle gracias a los usuarios y cerrar
+  FIn
