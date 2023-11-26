@@ -4,12 +4,11 @@ Entrada:
   -El valor del ángulo a obtener
 
 Salida:
-  -El resultado de la tangente del ángulo
+  -El resultado de la tangente del ángulo en grados
 
 Restricciones:
   - Ingresar el valor en reales
   - EL valor de coseno debe ser distinto de 0
-  - Expresado en grados
 
 Algoritmo
 
@@ -17,19 +16,20 @@ INICIO
 
 1.- Se crean las siguientes variables: "x", "s", "c" y "t" como reales
 2.- Mientras que el valor de cos(x) sea igual a cero hacer
-3.- Solicitar el valor del ángulo en grados
-4.- Guardar el dato en la variable x: "x = ángulo_ingresasado"
-5.- LLamar a la función seno
-6.- Realizar sen(x) y guardar el valor en "s": "s = sen(x)"
-7.- Llamar a la función coseno
-8.- Realizar cos(x) y guardar el valor en "c": "c = cos (x)"
-9.-Si cos(x) es igual a 0
-  9.01.-Mostrar por pantalla "Como vas a dividir entre 0 mi perro? JAJJA re noob. Ya deja el foco pinche cricoso :v"
-9.1.-sino
+3.- Solicitar el valor del ángulo
+4.- Hacer la conversión: x*PI/180
+5.- Guardar el dato en la variable x: "x = ángulo_ingresasado"
+6.- LLamar a la función seno
+7.- Realizar sen(x) y guardar el valor en "s": "s = sen(x)"
+8.- Llamar a la función coseno
+9.- Realizar cos(x) y guardar el valor en "c": "c = cos (x)"
+10.-Si cos(x) es igual a 0
+  10.01.-Mostrar por pantalla "Como vas a dividir entre 0 mi perro? JAJJA re noob. Ya deja el foco pinche cricoso :v"
+10.1.-sino
   9.11.-No hacer ni verga
-10.-Fin del mientras
-11.-Realizar tangente: "t = s / c"
-12.-Mostrar por pantalla el resultado de la tangente
+11.-Fin del mientras
+12.-Realizar tangente: "t = s / c"
+13.-Mostrar por pantalla el resultado de la tangente
 
 FIN
 
