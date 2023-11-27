@@ -13,21 +13,21 @@ int main()
 		switch(opciones)
 		{
 		case 0:break;
-		case 1:
+		case 1://Llamar a la potencia
 			printf("Espere 1");break;
-		case 2:
+		case 2://Raicez
 			printf("Espere 2");break;
-		case 3:
+		case 3://Factoriales
 			printf("Espere 3");break;
-		case 4:
+		case 4://Seno
 			printf("Espere 4");break;
-		case 5:
+		case 5://Coseno
 			printf("Espere 5");break;
-		case 6:
+		case 6://Tangente
 			printf("Espere 6");break;
-		case 7:
+		case 7://Ans
 			printf("Espere 7");break;
-		case 8:
+		case 8://Historial
 			printf("Espere 8");break;
 		default:
 			printf("Opcion no reconocida intente de nuevo");
@@ -42,7 +42,7 @@ int main()
 
 void menu1()
 {
-	printf("\n¿Que deseas realizar?\n");
+	printf("\nÂ¿Que deseas realizar?\n");
 	printf("\n[1] Potencia\n");
 	printf("[2] Raiz cuadrada\n");
 	printf("[3] Factorial\n");
@@ -56,6 +56,6 @@ void menu1()
 }
 void menu2()
 {
-	printf("\n\t\a¿Desea continuar?");
+	printf("\n\t\aÂ¿Desea continuar?");
 	printf("\n\n\t[1]Si\t[0]No\n");
 }
