@@ -6,6 +6,12 @@ Restricciones
  -> Angulos dentro de los numeros reales
 Algoritmo
 INICIO
- -> Solicitar Angulo y guardar en x.
- -> Converitr x en radianes y guardar en rad.
--> 
+ 1 -> Solicitar Angulo y guardar en x.
+ 2 -> Converitr x en radianes y guardar en rad por medio de una funcion.
+ 3 -> Calcular el factorial de los terminos guardados en n y ese nuevo resultado guardarlo en n1 por medio de una funcion.
+ 4 -> Mientras la diferencia de la serie sera menor a -0.0000000001 o mayor a 0.0000000001
+   4.1 -> Realizar la serie de Taylor: x-((x^3)/3!)+((x^5)/5!)-((x^7)/7!)+((x^9)/9!)...((-1)^n)*((x^2n+1)/(2n+1)!)
+   4.12 Si el resultado de n mod 4 es igual a 1 entonces se suma.
+   4.13 Si el resultado de n mod 4 es igual a 3 entonces se resta.
+ 5 -> Mostrar el resultado del seno(sen1).
+FIN
