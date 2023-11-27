@@ -18,8 +18,8 @@ double calcularCoseno(double x) {
     double resultado = 1.0;
     double termino = 1.0;
     int n = 1;
-    x=convertirRadianes(x)//Cambiamos el angulo a radianes
-    while (termino > 0.0000001 || termino < -0.0000001) {
+    x=convertirARadianes(x)//Cambiamos el angulo a radianes
+    while (termino > 0.0000001) {
         termino = (termino * x * x) / (2 * n * (2 * n - 1));
         if (n % 2 == 0) {
             resultado += termino;@
