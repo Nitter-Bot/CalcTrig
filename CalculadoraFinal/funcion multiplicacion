@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    // Declaración de variables
+    float x, y, mult;
+
+    // Solicitar al usuario ingresar dos números
+    printf("Ingresa el valor de x: ");
+    scanf("%f", &x);
+
+    printf("Ingresa el valor de y: ");
+    scanf("%f", &y);
+
+    // Calcular la multiplicación
+    mult = x * y;
+
+    // Mostrar el resultado
+    printf("La mult de %f y %f es %f\n", x, y, mult);
+
+    return 0;
+}
