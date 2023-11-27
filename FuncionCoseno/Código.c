@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 double convertirARadianes(double grados) {
-    return grados * (3.1416 / 180.0);
+    return grados * (3.14159265358979323846 / 180.0);
 }
 
 /*double calcularFactorial(int n) {
