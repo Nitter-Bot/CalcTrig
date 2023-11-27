@@ -142,3 +142,14 @@ float Multiplica(float a,float b)
 //Division
 float Divide(float a, float b)
 {return a/b;}
+//Hisotorial
+double historial(double arr[99], int c1, int m1)
+{
+	for(c1 = 0; c1 <= m1; c1++)
+	{
+		if(arr[c1] != 0)
+		{
+			printf("Su operacion %d es %lf.\n", c1+1, arr[c1]);
+		}	
+	}
+}
