@@ -7,7 +7,7 @@ double seno()
     int n;
     printf("Ingrese el angulo: ");//Se pide angulo
     scanf("%lf", &x);
-    rad = convrad(x);//Se convierte angulo a radianes
+    rad = convertirARadianes(x);//Se convierte angulo a radianes
     sen1 = 0;
     sen0 = 1;
     n = 1;
