@@ -21,7 +21,7 @@ Definir t,s,c,x,z Como Real
 
 	t = (s / c)
 
-	Escribir "El valor de la tangente para el ángulo ingresado es: " t 
+	Escribir "El valor de la tangente para el ángulo ingresado es: "  t 
 	
 FinAlgoritmo
 
