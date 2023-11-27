@@ -22,7 +22,7 @@ double calcularCoseno(double x) {
     while (termino > 0.0000001) {
         termino = (termino * x * x) / (2 * n * (2 * n - 1));
         if (n % 2 == 0) {
-            resultado += termino;@
+            resultado += termino;
         } else {
             resultado -= termino;
         }
