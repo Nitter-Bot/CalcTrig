@@ -5,10 +5,10 @@ double valorAbsoluto(double numero);
 double raizCuadrada(int numero);
 float factorial(int num);
 double convertirARadianes(double grados);
-double seno();
-double calcularCoseno(double x);
-double tangente(double ta);
-
+double seno(double x);
+double Coseno(double x);
+double tangente(double ang);
+void ans(double arg[99],float r,int c);
 //Potencias
 float potencia(float x,float y)
 {
@@ -47,7 +47,7 @@ double raizCuadrada(int numero)
 	double margen = 0.000001;
 	double estimacion = 1.0;
 	// Mientras haya una diferencia notable.
-	// Es decir, que el cuadrado de nuestra estimación difiera mucho del número
+	// Es decir, que el cuadrado de nuestra estimaciÃ³n difiera mucho del nÃºmero
 	while (valorAbsoluto((estimacion * estimacion) - numero) >= margen)
 	{
 		double cociente = numero / estimacion;
@@ -73,18 +73,18 @@ double convertirARadianes(double grados) {
     return grados * (3.14159265358979323846 / 180.0);
 }
 //Seno
-double seno()
+double seno(double x)
 {
-	double sen0, sen1, n1, aux,x;
+	double sen0, sen1, n1, aux;
 	int n;
-	printf("Ingrese el angulo: ");//Se pide angulo
-	scanf("%lf", &x);
+	/*printf("\nIngrese el angulo: ");//Se pide angulo
+	scanf("%lf", &x);*/
 	x = convertirARadianes(x);//Se convierte angulo a radianes
 	sen1 = 0;
 	sen0 = 1;
 	n = 1;
 	
-	while(sen0 > 0.0000000001 || sen0 < -0.0000000001)//while que genera la serie
+	while(sen0 > 0.0000001 || sen0 < -0.0000001)//while que genera la serie
 	{
 		n1 = factorial(n);
 		aux=potencia(x,n);
@@ -102,7 +102,7 @@ double seno()
 	return sen1;	
 }
 //Coseno
-double calcularCoseno(double x) {
+double Coseno(double x) {
     double resultado = 1.0;
     double termino = 1.0;
     int n = 1;
@@ -120,42 +120,25 @@ double calcularCoseno(double x) {
     return resultado;
 }
 //Tangente
-double tangente(double ta){
-
-    double t,s,c,z,x;
-    
-    
-    
-    printf("Ingrese el valor de tangente:\n ");
-    scanf("%lf", &x);
-    
-
-    z = (x*(3.14159265358979323846/180));
-
-    printf("radianes%lf\n", z);
-    
-    s = sin(z);
-
-    printf("seno%lf\n", s);
-
-    c = cos(z);
-
-    printf("Coseno%lf\n",c);
-    
-    if ( c == 0 ){
-        
-        printf("Error Math");
-    }
-    else{
-        
-        ta = (s/c);
-        
-        printf("El resultado de tangete es: %lf",ta);
-    }
-    
-    
-    
-    return ta;
-
-
+double tangente(double ang)
+{
+	double x,y,t;
+	x=Coseno(ang);
+	y=seno(ang);
+	t=y/x;
+	return t;
 }
+//Ans
+void ans(double arg[99],float r,int c)
+{
+	arg[c]=r;
+}
+//Suma y resta
+float SumaResta(float a,float b)
+{return (a)+(b);}
+//Multiplicacion
+float Multiplica(float a,float b)
+{return a*b;}
+//Division
+float Divide(float a, float b)
+{return a/b;}
