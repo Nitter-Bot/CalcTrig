@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "funciones.h"
 
-int main()
+double seno()
 {
     double sen0, sen1, n1, aux, z, rad, x;
     int n;
@@ -25,6 +25,6 @@ int main()
         }
         n += 2;
     }
-    printf("El seno es: %lf.\n", sen1);//se imprime el resultado
+    return sen1;
 
 }
