@@ -4,6 +4,9 @@ float potencia(float x,float y);
 double valorAbsoluto(double numero);
 double raizCuadrada(int numero);
 float factorial(int num);
+double convertirARadianes(double grados);
+
+double calcularCoseno(double x);
 //Potencias
 float potencia(float x,float y)
 {
@@ -63,8 +66,28 @@ float factorial(int num)
 	}
 	return principal;
 }
+//Conversion a radianes
+double convertirARadianes(double grados) {
+    return grados * (3.14159265358979323846 / 180.0);
+}
 //Seno
 
 //Coseno
+double calcularCoseno(double x) {
+    double resultado = 1.0;
+    double termino = 1.0;
+    int n = 1;
+	x=convertirARadianes(x);
+    while (termino > 0.0000001 || termino < -0.0000001) {
+        termino = (termino * x * x) / (2 * n * (2 * n - 1));
+        if (n % 2 == 0) {
+            resultado += termino;
+        } else {
+            resultado -= termino;
+        }
+        n++;
+    }
 
+    return resultado;
+}
 //Tangente
