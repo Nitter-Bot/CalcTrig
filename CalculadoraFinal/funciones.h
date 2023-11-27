@@ -9,6 +9,7 @@ double seno(double x);
 double Coseno(double x);
 double tangente(double ang);
 void ans(double arg[99],float r,int c);
+void historial(double arra[99],int c);
 //Potencias
 float potencia(float x,float y)
 {
@@ -142,14 +143,25 @@ float Multiplica(float a,float b)
 //Division
 float Divide(float a, float b)
 {return a/b;}
-//Hisotorial
-double historial(double arr[99], int c1, int m1)
+//historial
+void historial(double arra[99],int c)
 {
-	for(c1 = 0; c1 <= m1; c1++)
+	int i;
+	FILE *archivo;
+	archivo = fopen("historial.txt", "w+");
+	if (archivo != NULL)
 	{
-		if(arr[c1] != 0)
+		fprintf(archivo,"Historial de operaciones de calculadora \n");
+		for(i= 0; i<=c; i++)
 		{
-			printf("Su operacion %d es %lf.\n", c1+1, arr[c1]);
-		}	
+			fprintf(archivo,"\t%lf.\n",arra[i]);
+		}
+		int res = fclose(archivo);
+		printf("\t\aChecar el archivo generado :D \n", res);
+	}
+	else
+	{
+		printf("Error al abrir el archivo.\n");
+		printf("El archivo no existe o no se tienen permisos.\n");
 	}
 }
