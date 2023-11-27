@@ -5,6 +5,7 @@ void menu2();
 int main()
 {
 	float r;
+	double memoria[100];
 	printf("\tBienvenido a la calculadora trigonometrica\n\n");
 	int opciones;
 	float x,y;
@@ -20,7 +21,7 @@ int main()
 			scanf("%f",&x);
 			printf("\nIngrese potencia: ");
 			scanf("%f",&y);
-			r=potencia(x,y);//Llamamos a la funcion
+			r=potencia(x,y);
 			printf("\n%f",r);
 			break;
 		case 2://Raiz
@@ -36,7 +37,8 @@ int main()
 			printf("\n%f",r);
 			break;
 		case 4://Seno
-			printf("Espere 4");break;
+			r=seno();
+			printf("\n%f",r);break;
 		case 5://Coseno
 			printf("\nIngrese angulo: ");
 			scanf("%f",&x);
@@ -61,7 +63,7 @@ int main()
 }
 
 void menu1()
-{	//menu de presentacion al usuario
+{
 	printf("\n¿Que deseas realizar?\n");
 	printf("\n[1] Potencia\n");
 	printf("[2] Raiz cuadrada\n");
@@ -75,7 +77,7 @@ void menu1()
 	printf("\n");
 }
 void menu2()
-{	//Continuar usando la calucladora o no
+{
 	printf("\n\t\a¿Desea continuar?");
 	printf("\n\n\t[1]Si\t[0]No\n");
 }
