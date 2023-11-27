@@ -7,6 +7,8 @@ float factorial(int num);
 double convertirARadianes(double grados);
 double seno();
 double calcularCoseno(double x);
+double tangente(double ta);
+
 //Potencias
 float potencia(float x,float y)
 {
@@ -118,3 +120,42 @@ double calcularCoseno(double x) {
     return resultado;
 }
 //Tangente
+double tangente(double ta){
+
+    double t,s,c,z,x;
+    
+    
+    
+    printf("Ingrese el valor de tangente:\n ");
+    scanf("%lf", &x);
+    
+
+    z = (x*(3.14159265358979323846/180));
+
+    printf("radianes%lf\n", z);
+    
+    s = sin(z);
+
+    printf("seno%lf\n", s);
+
+    c = cos(z);
+
+    printf("Coseno%lf\n",c);
+    
+    if ( c == 0 ){
+        
+        printf("Error Math");
+    }
+    else{
+        
+        ta = (s/c);
+        
+        printf("El resultado de tangete es: %lf",ta);
+    }
+    
+    
+    
+    return ta;
+
+
+}
