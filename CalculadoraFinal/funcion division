@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    // Declaración de variables
+    float x, y, div;
+
+    // Solicitar al usuario ingresar dos números
+    printf("Ingresa el valor de x: ");
+    scanf("%f", &x);
+
+    printf("Ingresa el valor de y: ");
+    scanf("%f", &y);
+
+    // Calcular la suma
+    div = x / y;
+
+    // Mostrar el resultado
+    printf("La division de %f y %f es %f\n", x, y, div);
+
+    return 0;
+}
