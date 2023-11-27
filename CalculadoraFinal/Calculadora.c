@@ -4,10 +4,11 @@ void menu1();
 void menu2();
 int main()
 {
+	float r;
 	double memoria[99]={0};
 	printf("\tBienvenido a la calculadora trigonometrica\n\n");
-	int opciones,c=0, m;
-	float x,y,r;
+	int opciones,c=0;
+	float x,y;
 	do
 	{
 		menu1();
@@ -83,13 +84,12 @@ int main()
 			printf("%lf\n",memoria[c-1]);
 			break;
 		case 11://Historial
-			historial(memoria, c, m);
-
+			historial(memoria,c);
+			break;
 		default:
 			printf("Opcion no reconocida intente de nuevo");
 		}
 		c++;
-		m = c;
 		if(opciones!=0){
 		menu2();
 		scanf("%i",&opciones);}
@@ -119,3 +119,4 @@ void menu2()
 	printf("\n\t\a¿Desea continuar?");
 	printf("\n\n\t[1]Si\t[0]No\n");
 }
+
