@@ -9,7 +9,7 @@ Restricciones
 Algoritmo
  Inicio
   1. Solicitar ángulo y guardar en x
-  2. Crear la función  convertirAGrados para convertir de radianes a grados
+  2. Crear la función  convertirARadianes para convertir de radianes a grados
   3. Crear la función calcularFactorial para calcular el facotorial de los términos empezando con n=1
   4. Crear la función calcularCoseno para calcular el coseno
     4.1 Mientras la diferencia de la serie sea menor o igual a una precisión de 0.0001
