@@ -12,7 +12,7 @@ Definir t,s,c,x,z Como Real
 	c = cos(z)
 	//Escribir "Valor de coseno:" c
 	Si c  es igual que 0 Entonces
-		Escribir "Como vas a dividir entre 0 mi perro? Ya deja el foco pinche cricoso :v"
+		Escribir "Error de operación. Acción no valida 0/0"
 	SiNo
 		
 	Fin Si
