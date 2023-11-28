@@ -24,9 +24,9 @@ INICIO
 8.- Llamar a la función coseno
 9.- Realizar cos(x) y guardar el valor en "c": "c = cos (x)"
 10.-Si cos(x) es igual a 0
-  10.01.-Mostrar por pantalla "Como vas a dividir entre 0 mi perro? JAJJA re noob. Ya deja el foco pinche cricoso :v"
+  10.01.-Mostrar por pantalla "Error de operacio. Acción no valida 0/0"
 10.1.-sino
-  9.11.-No hacer ni verga
+  9.11.-No realizar ninguna acción
 11.-Fin del mientras
 12.-Realizar tangente: "t = s / c"
 13.-Mostrar por pantalla el resultado de la tangente
